@@ -28,9 +28,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.send_header('Date',self.date_time_string())
         self.end_headers()
 
-    # This method accepts request to serve up files from the web server.
-    # Instead of sending the file (html document), create a page dynamically
-    # Create quick form with a submit button for testing.
+    # This method accepts request to serve up files from the web server
     # The method is overidden so never actually makes it to the parent class
     def do_GET(self):
         """ response for a GET request """
